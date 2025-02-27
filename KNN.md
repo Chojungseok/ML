@@ -3,7 +3,7 @@
 ## KNN이란?
 - KNN(K-nearest Neighbors / K최근접 이웃)
     - 입력받은 데이터를 **가장 가까운** 이웃이 어디인지 확인하여 더 많은 데이터가 속해있는 그룹으로 분류하는 알고리즘
-    - 대표적인 **지도 학습(supervised learning)**중 하나이다
+    - 대표적인 **지도 학습(supervised learning)** 중 하나이다
 
 ## KNN 사용 방법
 1. Data 불러오기
