@@ -26,7 +26,7 @@ plt.plot([train_input['Length2'].min(), train_input['Length2'].max()], [train_in
 
 ## 다항회귀
 - 하나의 독립변수와 종속변수가 고차원의 다항식으로 표현이 된다  
-$$y = a*x^n + b$$
+$$y = a_{1}*x^n + a_{2}*x^{n-1} + \dots + b$$
 
 ```python
 # train/test의 Length2열에 제곱을 하여 Length2_poly라는 새로운 열 생성
