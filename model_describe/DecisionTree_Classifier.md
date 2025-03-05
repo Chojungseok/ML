@@ -19,7 +19,7 @@ dt.fit(train_scaled, train_target)
 from sklearn.model_selection import cross_validate
 scores = cross_validate(dt, train_input, train_target)
 ```
-**cross_validation**: 데이터를 훈련/검증/테스트 세트로 나눈뒤 테스트 세트를 제외 하고 나머지 데이터들을 cv의 값(default = 5)으로 나누어서 데이터를 분할 한뒤 분할한 각각의 데이터중 1개를 valid 나머지를 train에 사용하여 모델 검증, 모든 분할들이 valid를 한번씩 진행한다.
+**cross_validation**: 전체 데이터셋을 cv의 값(default = 5)으로 나누어서 데이터를 분할 한뒤 분할한 각각의 데이터중 1개를 valid 나머지를 train에 사용하여 모델 검증, 모든 분할들이 valid를 한번씩 진행한다.
 
 ```python
 # 하이퍼파라미터 튜닝
