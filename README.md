@@ -1,5 +1,8 @@
 # Machine Learning
 
+## 모델 관계 설명
+[model.md](/Users/chojungseok/Desktop/code/DAMF2/ML/model_describe/model.md)
+
 ## KNN-Classifier
 [KNN.md](/model_describe/KNN.md)
 
