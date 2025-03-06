@@ -1,6 +1,8 @@
 # 개념의 포함 관계
 
-## 지도 학습 (Supervised Learning)
+# 머신러닝 모델 정리
+
+## 1. 지도 학습 (Supervised Learning)
 - 지도 학습은 입력 데이터와 그에 해당하는 레이블(결과)을 이용해 모델을 학습하는 방법입니다.
 
 ### ├ (1) 선형 모델 (Linear Models)
@@ -15,12 +17,47 @@
 
 ---
 
-### 개념의 포함 관계
+## 머신러닝 모델 정리
+
+### 회귀 (Regression)
+| 유형 | 모델 |
+|------|------|
+| 선형 회귀 | 선형 회귀 (Linear Regression), 다중 회귀 (Multiple Regression), 릿지 회귀 (Ridge Regression), 라쏘 회귀 (Lasso Regression), 다항 회귀 (Polynomial Regression) |
+| 트리 기반 회귀 | 의사결정나무 회귀 (Decision Tree Regressor), 랜덤 포레스트 회귀 (Random Forest Regressor), 엑스트라 트리 회귀 (Extra Trees Regressor), 그래디언트 부스팅 회귀 (Gradient Boosting Regressor), HistGradientBoosting Regressor |
+
+### 분류 (Classification)
+| 유형 | 모델 |
+|------|------|
+| 선형 분류 | 로지스틱 회귀 (Logistic Regression) |
+| 트리 기반 분류 | 의사결정나무 분류 (Decision Tree Classifier), 랜덤 포레스트 분류 (Random Forest Classifier), 엑스트라 트리 분류 (Extra Trees Classifier), 그래디언트 부스팅 분류 (Gradient Boosting Classifier), HistGradientBoosting Classifier |
+| 기타 | 서포트 벡터 머신 (SVM), K-최근접 이웃 (K-NN), 신경망 (Neural Networks) |
+
+## 2. 비지도 학습 (Unsupervised Learning)
+
+### 군집 (Clustering)
+| 모델 |
+|------|
+| K-평균 (K-Means), 계층적 군집 (Hierarchical Clustering), DBSCAN (Density-Based Spatial Clustering of Applications with Noise) |
+
+### 차원 축소 (Dimensionality Reduction)
+| 모델 |
+|------|
+| 주성분 분석 (PCA), t-SNE, UMAP |
+
+### 연관 규칙 학습 (Association Rule Learning)
+| 모델 |
+|------|
+| 아프리오리 (Apriori), Eclat |
+
+---
+
+## 개념의 포함 관계
 - **Logistic Regression**은 분류 문제에서 선형 모델을 활용하는 대표적인 방법이고,  
   **SGDClassifier**는 여러 선형 모델(로지스틱 회귀 포함)을 **확률적 경사 하강법(SGD)**을 이용해 학습하는 일반적인 프레임워크입니다.
 - **DecisionTreeClassifier**는 트리 기반 모델로, 선형 모델과는 완전히 다른 방식으로 데이터를 분류합니다.
 - 따라서 **지도 학습 > 선형 모델 > Logistic Regression, SGDClassifier**의 포함 관계가 성립하며,  
   **DecisionTreeClassifier**는 다른 계열이지만 **지도 학습의 일부**입니다.
+
 
 ---
 
